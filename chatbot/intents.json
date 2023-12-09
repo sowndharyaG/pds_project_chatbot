@@ -1,0 +1,220 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hii",
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "How are you"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello",
+        "How can i help you"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "enrollment",
+      "patterns": [
+        "How to enroll into any course",
+        "How can i enroll into a course",
+        "How do i enroll into a course",
+        "How can i register into a course"   
+      ],
+      "responses": [
+        "You need department permission to enroll into any of any course. So, firstly add your desired courses into cart, then check for availability of your advisor and schedule an appointment. You can schedule an appointment with your advisor [here](https://umkc.starfishsolutions.com/starfish-ops/student/dashboard.html?tenantId=517)"
+      ],
+      "hyperlinks": [
+        {
+          "text": "here",
+          "url": "https://umkc.starfishsolutions.com/starfish-ops/student/dashboard.html?tenantId=517"
+        }
+      ]
+      
+    },
+    {
+      "tag": "course-availability",
+      "patterns": [
+        "course availability",
+        "Availability of any particular course",
+        "I would like to know the availability of a course",
+        "How can i find if a course is available",
+        "How can i find if a course has seats available",
+        "whom do i ask to check if there are seats in a class"
+      ],
+      "responses": [
+        "I can certainly help you with general information, but for detailed and up-to-date course availability, I recommend reaching out to our student advisor. They have access to the latest course schedules and enrollment details. You can contact them through [appointment](https://umkc.starfishsolutions.com/starfish-ops/student/dashboard.html?tenantId=517). If you have any other questions, feel free to ask!"
+      ],
+      "hyperlinks": [
+        {
+          "text": "appointment",
+          "url": "https://umkc.starfishsolutions.com/starfish-ops/student/dashboard.html?tenantId=517"
+        }
+      ]
+    },
+    {
+      "tag": "advisor-availability",
+      "patterns": [
+        "advisor availability",
+        "Availability of advisor",
+        "How can i schedule meeting with advisor",
+        "How do i find advisor available timings",
+        "Where can i find schedule of advisor"
+      ],
+      "responses": [
+        "You can find advisor availability [here](https://umkc.starfishsolutions.com/starfish-ops/student/dashboard.html?tenantId=517)"
+      ],
+      "hyperlinks": [
+        {
+          "text": "here",
+          "url": "https://umkc.starfishsolutions.com/starfish-ops/student/dashboard.html?tenantId=517"
+        }
+      ]
+    },
+    {
+      "tag": "prerequisites",
+      "patterns": [
+        "Prerequisites for Computer Science and Data Science courses",
+        "What are the prerequisites for course?",
+        "What are the requirements for course?",
+        "Are there any essentials for enrolling in the course",
+        "What skills or prerequisites should one have before taking a course",
+        "Could you provide information on the must-haves for the course",
+        "What foundational knowledge is essential before starting a course on "
+      ],
+      "responses": [
+        "You can find prerequisites for all the courses in this [page](https://catalog.umkc.edu/course-offerings/graduate/comp-sci/)"
+      ],
+      "hyperlinks": [
+        {
+          "text": "page",
+          "url": "https://catalog.umkc.edu/course-offerings/graduate/comp-sci/"
+        }
+      ]
+    },
+    {
+      "tag": "core-computer",
+      "patterns": [
+        "What are the core subjects for computer science",
+        "Can you outline the key subjects that make up the core curriculum for ?",
+        "What are the fundamental courses included in the curriculum for computer science?",
+        "What core subjects are typically covered in a computer science?",
+        "What courses are considered essential for a ",
+        "What is the required coursework for computer science"
+      ],
+      "responses": [
+        "For Computer Science you have to complete any 3 core courses from the following\nCOMP-SCI 5520 Network Architecture\nCOMP-SCI 5531 Advanced Operating Systems\nCOMP-SCI 5551\nAdvanced Software Engineering\nCOMP-SCI 5565\nIntroduction to Statistical Learning\nCOMP-SCI 5592\nDesign and Analysis of Algorithms\nFor more information regarding other courses in computer science and electives related to computer science courses, you can [visit](https://catalog.umkc.edu/colleges-schools/science-engineering/computer-science/master-of-science-computer-science/)"
+      ],
+      "hyperlinks": [
+        {
+          "text": "visit",
+          "url": "https://catalog.umkc.edu/colleges-schools/science-engineering/computer-science/master-of-science-computer-science/"
+        }
+      ]
+    },
+    {
+      "tag": "core-data",
+      "patterns": [
+        "What are the core subjects for data science",
+        "Can you outline the key subjects that make up the core curriculum for ?",
+        "What are the fundamental courses included in the curriculum for data science?",
+        "What core subjects are typically covered in a data science?",
+        "What courses are considered essential for a ",
+        "What is the required coursework for data science"
+      ],
+      "responses": [
+        "For Data Science you have to complete any 3 core courses from the following\nCOMP-SCI 5530 Principles of Data Science\nCOMP-SCI 5540 Principles of Big Data Management\nCOMP-SCI 5565\nIntroduction to Statistical Learning\nCOMP-SCI 5567 Deep Learning\nCOMP-SCI 5588 Data Science Capstone\nFor more information regarding other courses in computer science and electives related to data science courses, you can [visit](https://catalog.umkc.edu/colleges-schools/science-engineering/computer-science/master-of-science-data-science-analytics/)"
+      ],
+      "hyperlinks": [
+        {
+          "text": "visit",
+          "url": "https://catalog.umkc.edu/colleges-schools/science-engineering/computer-science/master-of-science-data-science-analytics/"
+        }
+      ]
+    },
+    {
+      "tag": "improvement",
+      "patterns": [
+        "Improvement in academics",
+        "Based on my current grades and performance, do you have any suggestions for improvement?",
+        "What resources do you recommend for improving performance in ",
+        "Based on my grades, are there specific tutoring services you suggest for additional support"
+      ],
+      "responses": [
+        "UMKC Tutoring is a CRLA certified program that offers free one-on-one tutoring to UMKC students for many courses from a variety of subjects. Our peer tutors can help them understand important concepts, figure out the best way for them to study, and more! Our services are available by appointment or drop-ins. You can click the [link](https://www.umkc.edu/asm/umkc-tutoring/tutoring-faculty-staff-resources.html#:~:text=UMKC%20Tutoring%20is%20a%20CRLA,by%20appointment%20or%20drop%2Dins) to see our full course list."
+      ],
+      "hyperlinks": [
+        {
+          "text": "link",
+          "url": "https://www.umkc.edu/asm/umkc-tutoring/tutoring-faculty-staff-resources.html#:~:text=UMKC%20Tutoring%20is%20a%20CRLA,by%20appointment%20or%20drop%2Dins"
+        }
+      ]
+    },
+    {
+      "tag": "career-support",
+      "patterns": [
+        "What resources are available for academic and career counseling", 
+        "Are there specific online platforms or portals for accessing academic support materials?", 
+        "Can you recommend any online resources for resume building and job searching?"
+      ],
+      "responses": [
+        "umkc provides a broad range of tools to assist you in all stages of your career development like:\n->Academic and professional career path decisions\nResumes, cover letters, CVs and personal statements\nInterview and networking preparation\nJob and internship searches\nGraduate and professional school applications\nLinkedIn account review\nSalary negotiation\nLaptop Loaner Program\n you can find more information [here](https://www.umkc.edu/career-services/)"
+      ],
+      "hyperlinks": [
+        {
+          "text": "here",
+          "url": "https://www.umkc.edu/career-services/"
+        }
+      ]
+    },
+    {
+      "tag": "counseling",
+      "patterns": [
+        "What are the counseling services available in the campus",
+        "Is there someone on campus I can speak to about personal issues or stress management?",
+        "Is there someone I can talk to about family emergencies or situations affecting my ability to focus on academics?",
+        "Can we discuss how the campus promotes inclusivity and addresses concerns related to diversity?"
+      ],
+      "responses": [
+        "UMKC Counseling Services provides a wide range of psychological services including counseling, psychological assessment and crisis intervention. There are group sessions, one on one consultation, medical referrals, you can book an appointment [here] (https://www.umkc.edu/wellness/services/counseling/index.html)"
+      ],
+      "hyperlinks": [
+        {
+          "text": "here",
+          "url": "https://www.umkc.edu/wellness/services/counseling/index.html"
+        }
+      ]
+    },
+    {
+      "tag": "add courses",
+      "patterns": [
+        "How do I include a course in my shopping cart?",
+        "What's the process for putting a course in the shopping cart?",
+        "Is there a way to include a course in the shopping cart?",
+        "Can you guide me on adding a course to the shopping cart?"
+      ],
+      "responses": [
+        "Go to UMKC home page\nNavigate to the footer\nClick on the pathway\nLogin with your umkc student details\nClick on manage classes\nIn the sidebar, under 'Enrollment' you can find 'Shopping Cart'\nSelect your semester and search for your classes based on your department"
+      ],
+      "hyperlinks": []
+    }
+  ]
+}
